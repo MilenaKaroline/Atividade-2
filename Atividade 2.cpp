@@ -60,7 +60,7 @@ struct Lista {
         return n;
     }
 
-    void removerInicio() { // O(1)
+    void excluirInicio() { // O(1)
         if (!vazia()) {
             if (tamanho() == 1) {
                 No *aux = cabeca;
@@ -76,7 +76,7 @@ struct Lista {
         }
     }
 
-    void removerFinal() { // O(n)
+    void excluirFinal() { // O(n)
         if (!vazia()) {
             if (tamanho() == 1) {
                 No *aux = cabeca;
@@ -96,14 +96,14 @@ struct Lista {
         }
     }
     
-    void removerNValores(int v) { // O(n*v)
+    void excluirNValores(int v) { // O(n*v)
     	while (v != 0) {
 		removerFinal();	
 		v--;
 		}
 	}
 	
-	void removerSegundoElemento(){
+	void excluirSegundoElemento(){
 		if (!vazia()) {
 			if (tamanho() == 1);
 			else if (tamanho() == 2) removerFinal();
@@ -117,7 +117,7 @@ struct Lista {
 		}
 	}
 	
-	void inserirTamanho(){
+	void introduzirTamanho(){
 		inserirFinal(tamanho());
 	}
 	
@@ -129,7 +129,7 @@ struct Lista {
         }
 	}
 	
-	    void inserirPenultimo(int v) { // O(n)
+	    void introduzirPenultimo(int v) { // O(n)
         if (!vazia()) {
             if (tamanho() == 1);
             else {
