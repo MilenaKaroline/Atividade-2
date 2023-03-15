@@ -149,18 +149,5 @@ struct Lista {
 
 int main() {
 
-    Lista l;
-    l.inserirFinal(5);
-    l.inserirFinal(4);
-    l.inserirFinal(3);
-    l.inserirFinal(2);
-    l.inserirFinal(7);
-    l.inserirFinal(1);
-    l.inserirFinal(0);
-
-    l.inserirPenultimo(69);
-	l.imprimir();
-    printf("%d\n", l.tamanho());
-
     return 0;
 }
