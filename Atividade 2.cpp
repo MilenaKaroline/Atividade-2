@@ -98,7 +98,7 @@ struct Lista {
     
     void excluirNValores(int v) { // O(n*v)
     	while (v != 0) {
-		removerFinal();	
+		excluirFinal();	
 		v--;
 		}
 	}
@@ -106,7 +106,7 @@ struct Lista {
 	void excluirSegundoElemento(){
 		if (!vazia()) {
 			if (tamanho() == 1);
-			else if (tamanho() == 2) removerFinal();
+			else if (tamanho() == 2) excluirFinal();
 			else{
 				No *aux = cabeca->proximo;
 				cabeca->proximo = aux->proximo;
